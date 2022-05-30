@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decorators defaultdir="/WEB-INF/decorator">
+
+<!--  원하는 url에 맞는 jsp 페이지를 지정 -->
+
+
+   <decorator name="main" page="main_decorator.jsp">
+      <pattern>*.do</pattern>
+   <!-- resource는 걸러짐 -->
+   </decorator>
+   
+
+   
+   
+   <decorator name="openWindow" page="open_decorator.jsp">
+      <pattern>/**/*.do</pattern>
+      <pattern>/main.do</pattern>      
+   </decorator>
+
+   <excludes>
+     <pattern>/resources/*</pattern>
+   </excludes>
+</decorators>   
+   

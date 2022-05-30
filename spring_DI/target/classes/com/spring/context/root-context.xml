@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+   
+   <bean id="sqlSessionFactory" class="com.jsp.datasource.OracleMybatisSqlSessionFactory" />
+   
+   <bean id="boardDAO" class="com.jsp.dao.BoardDAOImpl"/>
+   <bean id="replyDAO" class="com.jsp.dao.ReplyDAOImpl"/>
+   <bean id="memberDAO" class="com.jsp.dao.MemberDAOImpl"/>
+   <bean id="menuDAO" class="com.jsp.dao.MenuDAOImpl"/>
+   <bean id="noticeDAO" class="com.jsp.dao.NoticeDAOImpl"/>
+   <bean id="attachDAO" class="com.jsp.dao.AttachDAOImpl"/>
+   <bean id="pdsDAO" class="com.jsp.dao.PdsDAOImpl"/>
+   
+   <bean id="boardService" class="com.jsp.service.BoardServiceImpl">
+      <property name="boardDAO" ref="boardDAO"/>
+      <property name="replyDAO" ref="replyDAO"/>
+      <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+   </bean>   
+   
+   <bean id="loginSearchMemberService" class="com.jsp.service.LoginSearchMemberServiceImpl">
+      <property name="memberDAO" ref="memberDAO"/>
+      <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+   </bean>
+   
+   <bean id="memberService" class="com.jsp.service.MemberServiceImpl" >
+      <property name="memberDAO" ref="memberDAO"/>
+      <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+   </bean>
+   
+   <bean id="searchMemberService" class="com.jsp.service.SearchMemberServiceImpl" >
+      <property name="memberDAO" ref="memberDAO"/>
+      <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+   </bean>
+   
+   
+   <bean id="menuService" class="com.jsp.service.MenuServiceImpl">
+      <property name="menuDAO" ref="menuDAO"/>
+      <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+   </bean>
+   
+   
+   
+   <bean id="noticeService" class="com.jsp.service.NoticeServiceImpl">
+      <property name="noticeDAO" ref="noticeDAO"/>
+      <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+   </bean>
+   
+   <bean id="pdsService" class="com.jsp.service.PdsServiceImpl">
+      <property name="attachDAO" ref="attachDAO"/>
+      <property name="pdsDAO" ref="pdsDAO"/>
+      <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+   </bean>
+   
+   <bean id="replyService" class="com.jsp.service.ReplyServiceImpl">
+      <property name="memberDAO" ref="memberDAO"/>
+      <property name="replyDAO" ref="replyDAO"/>
+      <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+   </bean>
+</beans>

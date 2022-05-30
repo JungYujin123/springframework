@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>HTML 레이아웃</title>
+<meta charset="utf-8" />
+<style>
+#u1{
+  list-style-type: none;
+  border: 4px solid rgb(96, 190, 7);
+  border-left:none;
+  border-right:none;
+  height:40px;
+}
+#i1,#i2{
+  width:200px;
+  height:200px;
+}
+#l1{
+  float:left;
+  padding: 10px;
+}
+table{
+  border-collapse: collapse;
+  width:150px;
+  height:300px;
+}
+header {
+    width: 800px;
+    height: 50px;
+}
+#ft {
+    display:block;
+    background-color: lightgray;
+}
+aside { 
+    margin-top: 50px;
+    width: 150px;
+    height: 300px;
+    background-color: lightgreen;
+    float:left;
+}
+#m1{
+    margin-left: 50px;
+    width: 450px;
+    height: 470px;
+    background-color: lightblue;
+    float:left;
+}
+#m2{
+    margin-left : 50px;
+    width: 450px;
+    height: 470px;
+    background-color: yellow;
+    float:left;
+}
+#m3{
+    margin-left : 400px;
+    width: 250px;
+    height: 470px;
+    background-color: gray;
+    float:right;
+}
+
+</style>
+</head>
+
+<body>
+
+    <header>
+      <h1>
+		<img src="../images/check.png" alt="">​ <a href="index.html">Web Shop</a>
+	  </h1>
+    </header>
+    <nav>​
+  <ul id="u1">​
+    <li id="l1"><a href="index.html">Home</a></li>​
+    <li id="l1"><a href="index.html">About Us</a></li>​
+    <li id="l1"><a href="index.html">News</a></li>​
+    <li id="l1"><a href="index.html">My Account</a></li>​
+    <li id="l1"><a href="index.html">Contacts</a></li>​
+  </ul>​
+</nav>
+<aside>
+   <table border="1">
+     <tr>
+       <th><a href="">카테고리</a></th>
+     </tr>
+     <tr>
+       <td><a href="">컴퓨터</a></td>
+     </tr>
+     <tr>
+       <td><a href="">의류</a></td>
+     </tr>
+     <tr>
+       <td><a href="">음악</a></td>
+     </tr>
+     <tr>
+       <td><a href="">영화</a></td>
+     </tr>
+     <tr>
+       <td><a href="">스포츠/레저</a></td>
+     </tr>
+     <tr>
+       <td><a href="">가구/인테리어</a></td>
+     </tr>
+     <tr>
+       <td><a href="">식품</a></td>
+     </tr>
+     
+   </table>
+</aside>
+
+<main id="m1">
+  <img id="i1" src = "../images/computer1.png" > <br>
+  심플하고 슬림한 본체에 코어 I5 3470과 지포스 GT630을 장착 CPU: 인텔코어 I5 3470(아이비브릿지 3세대)사용 <br>
+  가격 : 1,200,000원
+</main>
+<main id="m2">
+  <img id="i2" src = "../images/computer1.png" > <br>
+  Full_HD로 선명한 화면, ISP패널로 시야각도 좋다!
+  CPU: 인텔 코어i7 3630 QM,
+  CPU: 인텔 코어i7 3630 QM
+  가격 : 1,200,000원
+</main>
+    
+    <div id="clear_footer"></div>    
+<main id="m3">
+  현재 쇼핑카트에 물품이 없습니다.
+  <a>쇼핑카트 보기</a>
+  <form action="test.jsp" method="post">
+    아이디<input type="text" name="id"><br>
+    비밀번호<input type="password" name="pw"><br><br>
+    <input type="submit" value="로그인">
+    <input type="reset">
+  </form>
+  <br><br>
+</main>
+<br><br>
+<footer id ="ft">
+  Copylight(c) 2013 Web Shop
+</footer>
+</body>
+
+</html>

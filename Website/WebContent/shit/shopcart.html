@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/outStyle.css">
+<style>
+#hh {
+	text-align: center;
+}
+table {
+	width: 50%;
+	height: 400px;
+	border-collapse: collapse;
+	margin-left:auto; 
+    margin-right:auto;
+    text-align: center;
+}
+button {
+	margin-left:auto; 
+    margin-right:auto;
+}
+reset {
+	margin-left:auto; 
+    margin-right:auto;
+}
+div	{
+	width: 200px;
+	margin-left:auto; 
+    margin-right:auto;
+   
+}
+
+</style>
+</head>
+<body>
+<h1 id="hh">장바구니 페이지</h1>
+
+<table id="tb" border="1">
+    <tr>
+      <th>품목</th>
+      
+      <th>가격</th>
+      <th>수량</th>
+      <th>합계</th>
+    </tr>
+    <tr>
+      <td>싱가드</td>
+      <td>15000원</td>
+      <td><input type='number'></input></td>
+      <td><input type='number'></input></td>
+    </tr>
+    <tr>
+      <td>헬멧</td>
+      <td>85000원</td>
+      <td><input type='number'></input></td>
+      <td><input type='number'></input></td>
+    </tr>
+    <tr>
+      <td>음악파일</td>
+      <td>1000원</td>
+      <td><input type='number'></input></td>
+      <td><input type='number'></input></td>
+    </tr>
+    <tr>
+      <td>영화파일</td>
+      <td>5000원</td>
+      <td><input type='number'></input></td>
+      <td><input type='number'></input></td>
+    </tr>
+  </table>
+<div>
+  <input type ="button" id="btnSubmit" value="계산" onclick="send()">
+  <input type ="button" id="btnSubmit" value="구매" onclick="send()">
+  <input type ="reset" id="btnSubmit"> <br>
+</div>
+  <a href=http://192.168.44.39/Website/shit/main2.html>Back to home</a>
+</body>
+</html>

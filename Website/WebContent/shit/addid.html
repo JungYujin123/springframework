@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/outStyle.css">
+<style>
+#di {
+	width: 80%;
+	height: 60%;
+	
+}
+
+#hh {
+	text-align: center;
+}
+#gd{
+	display : inline-block;
+}
+label {
+	display: inline-block; /* inline에서 inline-block 형태로  */
+	width: 70px;
+	font-size: 10px;
+}
+</style>
+</head>
+<body>
+<h1 id = "hh">회원가입 페이지</h1>
+
+<form id ="di">
+	<fieldset>
+		<legend>회원정보입력</legend>
+	    <label for="id">아이디</label>  <input name="id">&nbsp;&nbsp;<input type ="button" value="중복검사"><br>
+		<label for="pw">비밀번호</label> <input type="password"  name="pw"><br>
+		<label for="pwc">비밀번호 확인</label> <input type="password"  name="pwc"><br>
+		<label for="na">이름 </label><input name="na"><br>
+		<label for="tl">휴대폰번호</label>		
+		<input type="tel" name="tel" id="tl"
+				pattern="[0-9]{2,3}-[0-9]{3,4}-[0,9]{4}"> <br>
+		<label for="em">이메일</label>
+		<input type="email" name="email" id="em"> <br>
+		<label for="dt">생일</label>
+		<input type="date" name="date" id="dt"> <br>
+		
+		<label for="hp">홈페이지</label>
+		<input type="url" name="url" id="hp"> <br>
+		<label for="gd">성별</label>
+		<div id="gd">
+			남<input type="radio" name="gender" value="남자"checked> 
+			여<input type="radio" name="gender" value="여자"> <br>
+		</div><br>
+		<input type ="button" value="제출" onclick="send()">
+		<input type ="reset">
+	</fieldset>	
+</form>
+</body>
+</html>

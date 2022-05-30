@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/outStyle.css">
+<style>
+#header {
+	
+	width: 100%;
+	height: 100px;
+	background-color: #688DA0;
+	
+} 
+#nav {
+	border: 1px solid black;
+	width: 100%;
+	height: 50px;
+	/* background-color: #688DA0; */
+	
+} 
+#left {
+	width: 15%;
+	height: 300px;
+	float: left;
+	margin-top: 5px;
+	background-color: #C6CBCE;
+	
+} 
+#section { 
+	width: 50%;
+	height: 300px;
+	float: left;
+	margin-top: 5px;
+} 
+#right {
+	border: 1px solid black;
+	width: 30%;
+	height: 300px;
+	float: right;
+	margin-top: 5px;
+	background-color: #C6CBCE;
+	color: white;
+	
+} 
+#cart {
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 40px;
+	
+}
+
+UL {
+	list-style: none;
+}
+li {
+	align-items: center;
+	float: left;
+	margin-left: 70px;
+}
+#tb {
+	
+	margin-top: 30px;
+	background-color: #C6CBCE;
+	
+}
+th {
+	width: 15%;
+	background-color: #56595E;
+	color: white;
+	font-family: 'Nanum Myeongjo', serif;
+	font-weight: 1px;
+}
+#com1 {
+	width: 100%;
+	height: 60%;
+	
+}
+#com2 {
+	width: 100%;
+	height: 60%;
+}
+#com3 {
+	width: 100%;
+	height: 60%;
+}
+#shopcart {
+	
+	width: 100%;
+	height: 35%;
+	margin-left: 5%;
+	font-size: 10px;
+	
+}
+#login {
+	
+	width: 100%;
+	height: 55%;
+	margin-left: 5%;
+	font-size: 10px;
+	
+}
+button {
+	 margin-top: 10px; 
+	width: 130px;
+	height: 17px;
+	font-size: 3px;
+}
+iframe {
+	width: 100%;
+	height: 100%;
+}
+</style>
+</head>
+<body>
+<div id="header">
+	<p>
+		<img id="cart"src="../shit2/pexels-pixabay-264529.jpg" alt="카트사진" >
+	 	쇼핑몰
+	</p>
+</div>
+<hr>
+<div id="nav">
+	<ul>
+            <li><a href="http://192.168.44.39/Website/shit/main2.html">Home</a></li>
+            <li><a href="http://192.168.44.39/Website/shit/AboutUs.html">About Us</a></li>
+            <li><a href="http://192.168.44.39/Website/shit/News.html">News</a></li>
+            <li><a href="http://192.168.44.39/Website/shit/MyAccount.html">My Account</a></li>
+            <li><a href="http://192.168.44.39/Website/shit/Contacts.html">Contacts</a></li>
+   </ul>
+</div>
+<hr>
+
+<div id="left">
+<table id="tb">
+<tr>
+<th><a href="../shit/computer.html" target="ifrm">컴퓨터</a></th>
+</tr>
+<tr>
+<th><a href="../shit/clothe.html" target="ifrm">의류</a></th>
+</tr>
+<tr>
+<th><a href="../shit/music2.html" target="ifrm">음악</a></th>
+</tr>
+<tr>
+<th><a href="movie.html" target="ifrm">영화</a></th>
+</tr>
+<tr>
+<th><a href="../shit/sport.html" target="ifrm">스포츠/레저</a></th>
+</tr>
+<tr>
+<th><a href="../shit/furniture.html" target="ifrm">가구/인테리어</a></th>
+</tr>
+<tr>
+<th><a href="../shit/food.html" target="ifrm">식품</a></th>
+</tr>
+</table>
+</div>
+	
+<div id="section">
+<iframe src="../shit/computer.html" name="ifrm"
+	                  title="아이프레임테스트"></iframe>
+</div>
+<div id="right">
+	<div id="shopcart">
+	<h4>Shopping<br>Cart</h4>
+	<p>현재 쇼핑카트에 물품이 없습니다.</p>
+	<a href="http://192.168.44.39/Website/shit/shopcart.html">쇼핑카트보기</a>
+	</div>	
+	<div id="login">
+	<h4>Log in</h4>
+	<form id="frm" action="test.jsp" method="post">
+	    id <br> <input name="id"><br>
+		pw <br> <input type="password"  name="pw"><br><br>
+		
+		<input type ="button" value="로그인" onclick="send()">
+		<input type ="reset">
+	</form>
+	<a href="http://192.168.44.39/Website/shit/addid.html" target="_blank">회원가입</a> <a href="http://192.168.44.39/Website/shit/login.html">비밀번호분실</a>
+	</div>	
+</div>
+</body>
+</html>
